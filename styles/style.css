@@ -1,0 +1,448 @@
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  word-wrap: break-word;
+}
+img {
+  position: relative;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+@font-face {
+  font-family: 'cordelinaregular';
+  src: url('../fonts/cordelina-webfont.woff2') format('woff2'), url('../fonts/cordelina-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'dk_midnight_chalkerregular';
+  src: url('../fonts/dk-midnight-chalker-regular-webfont.woff2') format('woff2'), url('../fonts/dk-midnight-chalker-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'longhaulregular';
+  src: url('../fonts/longhaul-webfont.woff2') format('woff2'), url('../fonts/longhaul-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+.arial {
+  font-family: 'Arial', sans-serif;
+}
+.cordelina {
+  font-family: 'cordelinaregular', sans-serif;
+}
+.dkmidnight {
+  font-family: 'dk_midnight_chalkerregular', sans-serif;
+}
+.longhaul {
+  font-family: 'longhaulregular', sans-serif;
+}
+.regular {
+  font-weight: 400;
+}
+html,
+body {
+  background-image: linear-gradient(90deg, #271f20 24.17%, #e52e29 24.17%, #e52e29 50%, #271f20 50%, #271f20 74.17%, #e52e29 74.17%, #e52e29 100%);
+  background-size: 120px 120px;
+  height: auto;
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 1;
+}
+body {
+  position: relative;
+  display: block;
+}
+.hidden {
+  height: 0;
+  overflow: hidden;
+  display: block;
+}
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+.row {
+  width: 1200px;
+  margin: 0 auto;
+}
+.row .column,
+.row .columns {
+  float: left;
+  padding: 0 10px;
+}
+.row .row {
+  width: auto;
+  margin: 0 -10px;
+}
+.row:before,
+.row:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+/* Largura mínima de 0px e máxima de 1024px */
+@media screen and (max-width: 64em) {
+  .row {
+    width: 100%;
+  }
+}
+/* Largura mínima de 960px */
+@media screen and (min-width: 60em) {
+  .row {
+    max-width: 100%;
+  }
+  .row .column.one,
+  .row .columns.one {
+    width: 25%;
+  }
+  .row .column.two,
+  .row .columns.two {
+    width: 50%;
+  }
+  .row .column.three,
+  .row .columns.three {
+    width: 75%;
+  }
+  .row .column.four,
+  .row .columns.four {
+    width: 100%;
+  }
+  .row .column.push-one,
+  .row .columns.push-one {
+    margin-left: 25%;
+  }
+  .row .column.push-two,
+  .row .columns.push-two {
+    margin-left: 50%;
+  }
+  .row .column.push-three,
+  .row .columns.push-three {
+    margin-left: 75%;
+  }
+  .row .column.push-four,
+  .row .columns.push-four {
+    margin-left: 100%;
+  }
+  .row .row {
+    margin: 0 auto !important;
+  }
+}
+/* Largura mínima de 0px e máxima de 768px */
+@media screen and (min-width: 0em) and (max-width: 59.938em) {
+  .row {
+    width: auto;
+  }
+  .row .column,
+  .row .columns {
+    padding: 0 10px;
+  }
+  .row .column.vertical-padding,
+  .row .columns.vertical-padding {
+    padding: 10px;
+  }
+  .row .column.one,
+  .row .columns.one {
+    width: 25%;
+  }
+  .row .column.two,
+  .row .columns.two {
+    width: 50%;
+  }
+  .row .column.three,
+  .row .columns.three {
+    width: 75%;
+  }
+  .row .column.four,
+  .row .columns.four {
+    width: 100%;
+  }
+  .row .column.push-half,
+  .row .columns.push-half {
+    margin-left: 12.5%;
+  }
+  .row .column.push-one,
+  .row .columns.push-one {
+    margin-left: 25%;
+  }
+  .row .column.push-two,
+  .row .columns.push-two {
+    margin-left: 50%;
+  }
+  .row .column.push-three,
+  .row .columns.push-three {
+    margin-left: 75%;
+  }
+  .row .column.push-four,
+  .row .columns.push-four {
+    margin-left: 100%;
+  }
+  .row .row {
+    width: auto;
+    margin: 0;
+  }
+  #content #perguntas .logo {
+    width: 70%;
+    margin: 5px auto 0 auto;
+    z-index: 2;
+  }
+  #content #perguntas .wrap-perguntas {
+    background-color: #FFFFFF;
+    position: relative;
+    display: block;
+    margin: -30px 10px 0 10px;
+    padding: 40px 20px 10px 20px;
+    border-radius: 30px;
+  }
+  #content #perguntas .wrap-perguntas .pergunta {
+    position: relative;
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+  }
+  #content #perguntas .wrap-perguntas .pergunta.perg03 h1 span {
+    left: -35px;
+    top: -20px;
+  }
+  #content #perguntas .wrap-perguntas .pergunta.perg04 h1 span {
+    top: -20px;
+    left: -45px;
+  }
+  #content #perguntas .wrap-perguntas .pergunta.perg05 h1 span {
+    left: -40px;
+  }
+  #content #perguntas .wrap-perguntas .pergunta h1 {
+    font-size: 16px;
+    line-height: 1;
+    margin-bottom: 30px;
+    padding-left: 20px;
+  }
+  #content #perguntas .wrap-perguntas .pergunta h1 span {
+    position: absolute;
+    left: -30px;
+    top: -25px;
+    font-family: 'dk_midnight_chalkerregular', sans-serif;
+    font-size: 100px;
+    color: #E52E29;
+    font-style: italic;
+    filter: drop-shadow(2px 2px 0 #000000);
+  }
+  #content #perguntas .wrap-perguntas .pergunta li {
+    cursor: pointer;
+    margin-left: 20px;
+    margin-bottom: 25px;
+  }
+  #content #perguntas .wrap-perguntas .pergunta li button {
+    background-color: transparent;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    position: relative;
+    display: block;
+    font-family: 'cordelinaregular', sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    outline: none;
+    border: 0 none;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  #content #perguntas .wrap-perguntas .pergunta li button i {
+    content: "";
+    background-color: #E52E29;
+    position: absolute;
+    display: block;
+    top: -2px;
+    left: -14px;
+    border-radius: 50%;
+    padding: 5px 15px;
+    z-index: 1;
+    filter: drop-shadow(2px 2px 0 #000000);
+  }
+  #content #perguntas .wrap-perguntas .pergunta li button span {
+    position: relative;
+    display: inline-block;
+    font-family: 'longhaulregular', sans-serif;
+    font-size: 24px;
+    color: #FFFFFF;
+    z-index: 2;
+    filter: drop-shadow(2px 2px 0 #000000);
+    margin-right: 20px;
+  }
+  #content #perguntas .wrap-perguntas .pergunta li:last-child {
+    margin-bottom: 10px;
+  }
+  #content #perguntas .wrap-perguntas .pergunta.show {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+  }
+  #content #resultados .logo {
+    width: 40%;
+    margin: 5px 0 0 auto;
+    z-index: 2;
+  }
+  #content #resultados .wrap-resultados {
+    background-color: #FFFFFF;
+    position: relative;
+    display: block;
+    margin: 10px 10px 0 10px;
+    padding: 40px 20px 10px 20px;
+    border-radius: 30px;
+  }
+  #content #resultados .wrap-resultados .res01 h2,
+  #content #resultados .wrap-resultados .res02 h2,
+  #content #resultados .wrap-resultados .res03 h2 {
+    font-family: 'cordelinaregular', sans-serif;
+    font-size: 64px;
+    text-transform: uppercase;
+    line-height: 1.2;
+    color: #E52E29;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    filter: drop-shadow(2px 2px 0 #000000);
+  }
+  #content #resultados .wrap-resultados .res01 p,
+  #content #resultados .wrap-resultados .res02 p,
+  #content #resultados .wrap-resultados .res03 p {
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    color: #271F20;
+    line-height: 1.2;
+    margin-bottom: 30px;
+  }
+  #content #resultados .wrap-resultados .res01 img {
+    position: absolute;
+    top: -150px;
+    left: 0;
+    width: 70%;
+    z-index: 3;
+  }
+  #content #resultados .wrap-resultados .res02 img {
+    position: absolute;
+    top: -110px;
+    left: 0;
+    width: 65%;
+    z-index: 3;
+  }
+  #content #resultados .wrap-resultados .res03 img {
+    position: absolute;
+    top: -150px;
+    left: 10px;
+    width: 60%;
+    z-index: 3;
+  }
+  #content #resultados .wrap-resultados .res03 h2 {
+    margin-top: 70px;
+  }
+  #content #resultados .wrap-resultados .wrap-respostas {
+    position: relative;
+    display: block;
+    text-align: center;
+  }
+  #content #resultados .wrap-resultados .wrap-respostas .respostas {
+    position: relative;
+    display: inline-block;
+    font-family: 'cordelinaregular', sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #271F20;
+    text-decoration: none;
+    z-index: 2;
+  }
+  #content #resultados .wrap-resultados .wrap-respostas:before {
+    background-color: #E52E29;
+    content: "";
+    position: absolute;
+    display: block;
+    z-index: 1;
+    top: 7px;
+    left: 50%;
+    height: 11px;
+    width: 125px;
+    margin-left: -57px;
+  }
+  #content #resultados .wrap-resultados .wrap-respostas .seta {
+    position: absolute;
+    display: block;
+    top: -30px;
+    right: 0px;
+    width: 30%;
+    z-index: 3;
+  }
+  #content #respostas .logo {
+    width: 100%;
+    margin: -48px auto 10px auto;
+    z-index: 2;
+  }
+  #content #respostas ul {
+    background-color: #FFFFFF;
+    position: relative;
+    display: block;
+    margin: 10px;
+    padding: 40px 20px 10px 20px;
+    border-radius: 30px;
+  }
+  #content #respostas ul li {
+    position: relative;
+    display: block;
+    margin-bottom: 20px;
+  }
+  #content #respostas ul li h4,
+  #content #respostas ul li p {
+    font-size: 18px;
+    color: #271f20;
+  }
+  #content #respostas ul li h4 {
+    font-weight: 900;
+    margin-bottom: 5px;
+  }
+  #content #respostas ul li p {
+    font-weight: 400;
+  }
+  #content #respostas ul .wrap-voltar {
+    position: relative;
+    display: block;
+    text-align: center;
+  }
+  #content #respostas ul .wrap-voltar .voltar {
+    position: relative;
+    display: inline-block;
+    font-family: 'cordelinaregular', sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #271F20;
+    text-decoration: none;
+    z-index: 2;
+    margin-left: 30px;
+  }
+  #content #respostas ul .wrap-voltar:before {
+    background-color: #E52E29;
+    content: "";
+    position: absolute;
+    display: block;
+    z-index: 1;
+    top: 7px;
+    left: 50%;
+    height: 11px;
+    width: 180px;
+    margin-left: -85px;
+  }
+  #content #respostas ul .wrap-voltar .seta {
+    position: absolute;
+    display: block;
+    top: -32px;
+    left: -10px;
+    width: 30%;
+    z-index: 3;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+}

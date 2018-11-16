@@ -1,0 +1,51 @@
+* {box-sizing:border-box; -moz-box-sizing:border-box; margin: 0; padding: 0; list-style: none;word-wrap: break-word;}
+
+img{position: relative;display: block;max-width: 100%; height: auto;}
+
+@font-face {font-family: 'cordelinaregular'; src: url('./../fonts/cordelina-webfont.woff2') format('woff2'), url('./../fonts/cordelina-webfont.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face {font-family: 'dk_midnight_chalkerregular'; src: url('./../fonts/dk-midnight-chalker-regular-webfont.woff2') format('woff2'), url('./../fonts/dk-midnight-chalker-regular-webfont.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face {font-family: 'longhaulregular'; src: url('./../fonts/longhaul-webfont.woff2') format('woff2'), url('./../fonts/longhaul-webfont.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+.arial{font-family: 'Arial', sans-serif;}
+.cordelina{font-family: 'cordelinaregular', sans-serif;}
+.dkmidnight{font-family: 'dk_midnight_chalkerregular', sans-serif;}
+.longhaul{font-family: 'longhaulregular', sans-serif;}
+.regular{font-weight: 400;}
+
+html,body{
+	background-image: linear-gradient(90deg, #271f20 24.17%, #e52e29 24.17%, #e52e29 50%, #271f20 50%, #271f20 74.17%, #e52e29 74.17%, #e52e29 100%);
+	background-size: 120.00px 120.00px;
+	height: auto;
+	.arial;
+	font-size: 16px;
+	line-height: 1;
+}
+
+body{
+	position: relative;
+	display: block;
+}
+
+.hidden {height: 0; overflow: hidden; display: block;}
+
+.clearfix {
+	&:before, &:after {content: " "; display: table; clear: both;}
+}
+
+@width: 1200px;
+@gap: 20px;
+
+.row{
+	width: @width;
+	margin: 0 auto;
+
+	.column, .columns{
+		float: left;
+		padding: 0 @gap / 2;
+	}
+
+	.row{width:auto;margin: 0 -1 * @gap / 2}
+
+	&:before, &:after {content: " "; display: table; clear: both;}
+}
+@import './responsive.less';

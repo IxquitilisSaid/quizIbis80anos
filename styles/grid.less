@@ -1,0 +1,16 @@
+@width: 1200px;
+@gap: 20px;
+
+.row{
+	width: @width;
+	margin: 0 auto;
+
+	.column, .columns{
+		float: left;
+		padding: 0 @gap / 2;
+	}
+
+	.row{width:auto;margin: 0 -1 * @gap / 2}
+
+	&:before, &:after {content: " "; display: table; clear: both;}
+}
