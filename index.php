@@ -42,67 +42,67 @@
 	<div id="content">
 		<div class="row">
 			<div class="four columns">
-				<section id="perguntas" style="display: none;">
+				<section id="perguntas">
 					<img class="logo" src="./images/logo-ibis.svg" alt="Logo Íbis">
 					<div class="wrap-perguntas">
 						<ul class="pergunta perg01 show" id="perg01">
 							<h1><span>1</span> Qual foi o time responsável por aplicar a maior goleada em uma só partida?</h1>
-							<li><button class="alt-a" onclick="rocking(this.id)" id="1"><i>&nbsp;</i><span>A</span> Sport</button></li>
-							<li><button class="alt-b" onclick="clay(this.id)" id="2"><i>&nbsp;</i><span>B</span> Náutico</button></li>
-							<li><button class="alt-c" onclick="couch(this.id)" id="3"><i>&nbsp;</i><span>C</span> Santa Cruz</button></li>
-							<li><button class="alt-d" onclick="couch(this.id)" id="4"><i>&nbsp;</i><span>D</span> Central</button></li>
+							<li><button class="alt-a" onclick="err()" value="1"><i>&nbsp;</i><span>A</span> Sport</button></li>
+							<li><button class="alt-b" onclick="err()" value="2"><i>&nbsp;</i><span>B</span> Náutico</button></li>
+							<li><button class="alt-c" onclick="point()" value="3"><i>&nbsp;</i><span>C</span> Santa Cruz</button></li>
+							<li><button class="alt-d" onclick="err()" value="4"><i>&nbsp;</i><span>D</span> Central</button></li>
 						</ul>
 						<ul class="pergunta perg02" id="perg02">
 							<h1><span>2</span> Em quais anos o Pássaro Preto foi ganhou a taça do Torneio Início?</h1>
-							<li><button class="alt-a" onclick="rocking(this.id)" id="5"><i>&nbsp;</i><span>A</span> 1948 e 1949</button></li>
-							<li><button class="alt-b" onclick="clay(this.id)" id="6"><i>&nbsp;</i><span>B</span> 1949 e 1950</button></li>
-							<li><button class="alt-c" onclick="couch(this.id)" id="7"><i>&nbsp;</i><span>C</span> 1947 e 1956</button></li>
-							<li><button class="alt-d" onclick="couch(this.id)" id="8"><i>&nbsp;</i><span>D</span> 1948 e 1950</button></li>
+							<li><button class="alt-a" onclick="err()" value="5"><i>&nbsp;</i><span>A</span> 1948 e 1949</button></li>
+							<li><button class="alt-b" onclick="err()" value="6"><i>&nbsp;</i><span>B</span> 1949 e 1950</button></li>
+							<li><button class="alt-c" onclick="err()" value="7"><i>&nbsp;</i><span>C</span> 1947 e 1956</button></li>
+							<li><button class="alt-d" onclick="point()" value="8"><i>&nbsp;</i><span>D</span> 1948 e 1950</button></li>
 						</ul>
 						<ul class="pergunta perg03" id="perg03">
 							<h1><span>3</span> Qual time foi a vítima do único gol marcado por Mauro Shampoo com a camisa do Íbis?</h1>
-							<li><button class="alt-a" onclick="rocking(this.id)" id="9"><i>&nbsp;</i><span>A</span> Ferroviário</button></li>
-							<li><button class="alt-b" onclick="clay(this.id)" id="10"><i>&nbsp;</i><span>B</span> Serrano</button></li>
-							<li><button class="alt-c" onclick="couch(this.id)" id="11"><i>&nbsp;</i><span>C</span> Central</button></li>
-							<li><button class="alt-d" onclick="couch(this.id)" id="12"><i>&nbsp;</i><span>D</span> Flamengo-PE</button></li>
+							<li><button class="alt-a" onclick="point()" value="9"><i>&nbsp;</i><span>A</span> Ferroviário</button></li>
+							<li><button class="alt-b" onclick="err()" value="10"><i>&nbsp;</i><span>B</span> Serrano</button></li>
+							<li><button class="alt-c" onclick="err()" value="11"><i>&nbsp;</i><span>C</span> Central</button></li>
+							<li><button class="alt-d" onclick="err()" value="12"><i>&nbsp;</i><span>D</span> Flamengo-PE</button></li>
 						</ul>
 						<ul class="pergunta perg04" id="perg04">
 							<h1><span>4</span> Quais desses clubes levou a maior goleada do Pior Time do Mundo?</h1>
-							<li><button class="alt-a" onclick="rocking(this.id)" id="13"><i>&nbsp;</i><span>A</span> Porto</button></li>
-							<li><button class="alt-b" onclick="clay(this.id)" id="14"><i>&nbsp;</i><span>B</span> Timbaúba</button></li>
-							<li><button class="alt-c" onclick="couch(this.id)" id="15"><i>&nbsp;</i><span>C</span> Ferroviário</button></li>
-							<li><button class="alt-d" onclick="couch(this.id)" id="16"><i>&nbsp;</i><span>D</span> Cabense</button></li>
+							<li><button class="alt-a" onclick="err()" value="13"><i>&nbsp;</i><span>A</span> Porto</button></li>
+							<li><button class="alt-b" onclick="point()" value="14"><i>&nbsp;</i><span>B</span> Timbaúba</button></li>
+							<li><button class="alt-c" onclick="err()" value="15"><i>&nbsp;</i><span>C</span> Ferroviário</button></li>
+							<li><button class="alt-d" onclick="err()" value="16"><i>&nbsp;</i><span>D</span> Cabense</button></li>
 						</ul>
 						<ul class="pergunta perg05" id="perg05">
 							<h1><span>5</span> Qual foi a última vez que o Pássaro Preto disputou a Série A1?</h1>
-							<li><button class="alt-a" onclick="rocking(this.id)" id="17"><i>&nbsp;</i><span>A</span> 1999</button></li>
-							<li><button class="alt-b" onclick="clay(this.id)" id="18"><i>&nbsp;</i><span>B</span> 2000</button></li>
-							<li><button class="alt-c" onclick="couch(this.id)" id="19"><i>&nbsp;</i><span>C</span> 2001</button></li>
-							<li><button class="alt-d" onclick="couch(this.id)" id="20"><i>&nbsp;</i><span>D</span> 2002</button></li>
+							<li><button class="alt-a" onclick="err()" value="17"><i>&nbsp;</i><span>A</span> 1999</button></li>
+							<li><button class="alt-b" onclick="point()" value="18"><i>&nbsp;</i><span>B</span> 2000</button></li>
+							<li><button class="alt-c" onclick="err()" value="19"><i>&nbsp;</i><span>C</span> 2001</button></li>
+							<li><button class="alt-d" onclick="err()" value="20"><i>&nbsp;</i><span>D</span> 2002</button></li>
 						</ul>
 						<ul class="pergunta perg06" id="perg06">
 							<h1><span>6</span> Em que ano o clube disputou o Pernambucano pela primeira vez?</h1>
-							<li><button class="alt-a" onclick="rocking(this.id)" id="21"><i>&nbsp;</i><span>A</span> 1944</button></li>
-							<li><button class="alt-b" onclick="clay(this.id)" id="22"><i>&nbsp;</i><span>B</span> 1945</button></li>
-							<li><button class="alt-c" onclick="couch(this.id)" id="23"><i>&nbsp;</i><span>C</span> 1946</button></li>
-							<li><button class="alt-d" onclick="couch(this.id)" id="24"><i>&nbsp;</i><span>D</span> 1947</button></li>
+							<li><button class="alt-a" onclick="err()" value="21"><i>&nbsp;</i><span>A</span> 1944</button></li>
+							<li><button class="alt-b" onclick="err()" value="22"><i>&nbsp;</i><span>B</span> 1945</button></li>
+							<li><button class="alt-c" onclick="err()" value="23"><i>&nbsp;</i><span>C</span> 1946</button></li>
+							<li><button class="alt-d" onclick="point()" value="24"><i>&nbsp;</i><span>D</span> 1947</button></li>
 						</ul>
 					</div>
 				</section>
 				<section id="resultados" style="display: none;">
 					<img class="logo" src="./images/logo-ibis.svg" alt="Logo Íbis">
 					<div class="wrap-resultados">
-						<div class="res01" id="balanço">
+						<div class="res01" id="num1fan">
 							<img src="./images/shampoo.svg" alt="Mauro Shampoo">
 							<h2>Barba, cabelo e bigode!</h2>
 							<p>Pense num fã do Passaro Pretro. Tu é o artilheiro que faltou ao Íbis!!!</p>
 						</div>
-						<div class="res02" id="barro">
+						<div class="res02" id="num2fan">
 							<img src="./images/camisa.svg" alt="O mito, Nininho">
 							<h2>É bem dizer o mito Nininho!</h2>
 							<p>Não foi tão ruim, mas passou na peneira. Dá pra jogar na linha do Íbis!!</p>
 						</div>
-						<div class="res03" id="sofá">
+						<div class="res03" id="yikes">
 							<img src="./images/ibisdoibis.svg" alt="Íbis do Íbis">
 							<h2>O Íbis do Íbis!!!</h2>
 							<p>Cabra coerente com o quiz, nenhum golzinho? Danôsse Menino, sei não vú...</p>
@@ -155,195 +155,103 @@
 		</div>
 	</div>
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
 	<script type="text/javascript">
-		/*
-		var a = 0;
-		var b = 0;
-		var c = 0;
-		var d = 0;
+
+		var points = 0;
 		var i = 0;
-		var resp;
-		var quest = ["perg01", "perg02", "perg03", "perg04", "perg05", "perg06"];
-		var bread = ["b1", "b2", "b3", "b4", "b5", "b6"];
 
-		function rocking(id) {
-			a++;
-			console.log(a);
+		var questions = document.getElementsByClassName('pergunta');
 
-			next();
-		}
-
-		function clay(id) {
-			b++;
-			console.log(b);
-
-			next();
-		}
-
-		function couch(id) {
-			c++;
-			console.log(c);
-
-			next();
-		}
-
-		function couch(id) {
-			d++;
-			console.log(d);
-
-			next();
+		function showResults() {
+			document.getElementById('resultados').style.display = 'block';
+			if (points <= 2) {
+				document.getElementById('yikes').style.display = 'block';
+				document.getElementById('num2fan').style.display = 'none';
+				document.getElementById('num1fan').style.display = 'none';
+			} else if (points == 3 || points == 4) {
+				document.getElementById('num2fan').style.display = 'block';
+				document.getElementById('num1fan').style.display = 'none';
+				document.getElementById('yikes').style.display = 'none';
+			} else if (points == 5 || points == 6) {
+				document.getElementById('num1fan').style.display = 'block';
+				document.getElementById('num2fan').style.display = 'none';
+				document.getElementById('yikes').style.display = 'none';
+			}
 		}
 
 		function next() {
-
-			if (i >= 3) {
-
-				result();
-
+			if(i == questions.length) {
+				document.getElementById('perguntas').style.display = "none";
+				showResults();
 			} else {
-
-				document.getElementById(quest[i]).classList.remove("show");
-
+				questions[i].classList.remove("show");
 				i++;
-
-				document.getElementById(quest[i]).classList.add("show");
-				console.log(i);
-				document.getElementById(bread[i]).classList.add("selected");
-				return i;
-			
+				questions[i].classList.add("show");
 			}
 		}
 
-		function change(id) {
-			
-			
-			if (bread[i] > id) { //going backwards
+		function err() {
+			next();
+		}
 
-				document.getElementById(bread[i]).classList.remove("selected");
-				document.getElementById(quest[i]).classList.remove("show");
+		function point() {
+			points++;
+			next();
+		}
 
-				--i;
 
-				check();
-				document.getElementById(quest[i]).classList.add("show");
-				console.log(i + ' id menor');
-				console.log(bread[i] + ' id menor');
 
-				return i;
 
-			}*/ /*else if (bread[i] < id) { //going forward
+		/*var i = 0;
 
-				if (a || b || c > 0) {
-					document.getElementById(quest[i]).classList.remove("show");
-					document.getElementById(bread[i]).classList.add("selected");
+		var questions = document.getElementsByClassName('pergunta');
 
-					++i;
-					
-					document.getElementById(quest[i]).classList.add("show");
-					document.getElementById(bread[i]).classList.remove("selected");
-					console.log(i + ' id maior');
-					console.log(bread[i] + ' id maior');
+		var a = [1, 5, 9, 13, 17, 21];
+		var b = [2, 6, 10, 14, 18, 22];
+		var c = [3, 7, 11, 15, 19, 23];
+		var d = [4, 8, 12, 16, 20, 24];
 
-					return i;
-
-				} else if (a || b || c <= 0) {
-					console.log('fool');
-					return i;
-				}
-
-			}*/ /*else {
-				console.log('hey im the same!');
+		var aa = [];
+		var bb = [];
+		var cc = [];
+		var dd = [];
+		
+		function play(value){
+			if (a.includes(value)){
+				aa.push(value);
+			} else if (b.includes(value)){
+				bb.push(value);
+			} else if (c.includes(value)){
+				cc.push(value);
+			} else if (d.includes(value)){
+				dd.push(value);
 			}
-		}
 
-		function check() { //decrement on change
-			if (a > 1) {
-				a--;
-			} else if (b > 1) {
-				b--;
-			} else if (c > 1) {
-				c--;
-			} else if (d > 1) {
-				d--;
+			if(i == questions.length) {
+				document.getElementById('perguntas').style.display = "none";
+				showResults();
+			} else {
+				questions[i].classList.remove("show");
+				i++;
+				questions[i].classList.add("show");
 			}
+
 		}
 
-		function result() {
+		function showResults() {
+			if (aa.length >= 2) {
 
-			document.getElementById("perguntas").style.display = "none";
-			document.getElementById("perguntas").style.visibility = "hidden";
-			document.getElementById("perguntas").style.opacity = "0";
+			} else if (bb.length >= 2) {
 
-			if (a >= 2) {
-				console.log('Cadeira de balanço');
-				ShowResultsWrap();
-				ShowResultsBal();
-				document.getElementById("balanço").style.visibility = "visible";
-			} else if (b >= 2){
-				console.log('Filtro de Barro');
-				ShowResultsWrap();
-				ShowResultsBar();
-				document.getElementById("barro").style.visibility = "visible";
-			} else if (c >= 2) {
-				console.log('Sofá com manta');
-				ShowResultsWrap();
-				ShowResultsSof();
-				document.getElementById("sofá").style.visibility = "visible";
-			} else if (a < 2){
-				console.log('Cadeira de balanço');
-				ShowResultsWrap();
-				ShowResultsBal();
-				document.getElementById("balanço").style.visibility = "visible";
 			}
-		}
+		}*/
 
-		function ShowResultsWrap() {
-			document.getElementById("resultados").style.display = "block";
-			document.getElementById("resultados").style.visibility = "visible";
-			document.getElementById("resultados").style.opacity = "1";
-		}
-		function ShowResultsBal() {
-			document.getElementById("balanço").style.display = "block";
-			document.getElementById("balanço").style.visibility = "visible";
-			document.getElementById("balanço").style.opacity = "1";
-		}	
-		function ShowResultsBar() {
-			document.getElementById("barro").style.display = "block";
-			document.getElementById("barro").style.visibility = "visible";
-			document.getElementById("barro").style.opacity = "1";
-		}	
-		function ShowResultsSof() {
-			document.getElementById("sofá").style.display = "block";
-			document.getElementById("sofá").style.visibility = "visible";
-			document.getElementById("sofá").style.opacity = "1";
-		}
 
-		$(document).ready(function($) {
-			
-			var alturaTela = $(window).height();
-			var alturaTotal = alturaTela - 172;
 
-			$("#content").css({"height": alturaTotal+"px"});
-
-			// ADD CLASS ATIVO 
-			$("#perguntas li button").click(function(){
-				if ($(this).parent("li").siblings().hasClass("ativo")) {
-					$(this).parent("li").siblings().removeClass("ativo");
-				}
-				$(this).parent("li").addClass("ativo");
-			});
-
-		});
-
-		$(window).resize(function() {
-			var alturaTela = $(window).height();
-			var alturaTotal = alturaTela - 172;
-			
-			$("#content").css({"height": alturaTotal+"px"});
-
-		});*/
 	</script>
-		<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5b58800cd6d379001104abef&product=custom-share-buttons"></script>
+
+	<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5b58800cd6d379001104abef&product=custom-share-buttons"></script>
 	<?php /* ?>
 	<script type='text/javascript' src='//platform-api.sharethis.com/js/sharethis.js#property=5b58800cd6d379001104abef&product=inline-share-buttons' async='async'></script>
 	<?php */ ?>
